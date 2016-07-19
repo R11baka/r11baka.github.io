@@ -11,8 +11,9 @@ email: r11baka at gmail com
 description: > # this means to ignore newlines until "baseurl:"
   Еще 1 блог о IT
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://r11baka.github.io/" # the base hostname & protocol for your site
 github_username:  r11baka
+google_analytics: UA-80976120-1
 
 # Build settings
 markdown: kramdown
