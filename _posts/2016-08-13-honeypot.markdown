@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  Эксперимент с honeypot
-date:   2016-08-13
-categories: honeypot
+title: Эксперимент с honeypot
+date: 2016-08-13T00:00:00.000Z
+categories: 'honeypot,hackers'
+published: true
 ---
 
 # TL;DR
@@ -18,7 +19,7 @@ categories: honeypot
 
 ---
 
-# Результаты
+## Результаты
 Сканировать и брутить стали к вечеру ,т.е. часов через 4-5.Я обрадовался,и периодически проверяя cowrie,оставил honeypot на 3 месяца.
 По проишествии 3 месяцев можно подвести какие-то результаты.
 
