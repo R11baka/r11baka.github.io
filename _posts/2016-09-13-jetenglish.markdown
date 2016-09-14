@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  Jetenglish развод
-date:   2016-09-14 15:05:00 +0300
-categories: английский, jetenglish
+title: Jetenglish это развод
+date: '2016-09-14 15:05:00 +0300'
+categories: 'английский, jetenglish'
+published: true
 ---
 Пост немного не по теме =) Цель,предупредить вас и кого либо , о недобросовестном продавце.
 Воот, итак [jetenglish.ru](http://jetenglish.ru/). Вобщем,что я могу сказать? у автора есть базовый курс,
