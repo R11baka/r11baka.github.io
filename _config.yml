@@ -20,3 +20,5 @@ exclude: [vendor]
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+theme: jekyll-theme-cayman
