@@ -1,0 +1,53 @@
+---
+layout: post
+title: make file
+date: 2020-07-30T00:00:00.000Z
+categories: make docker build
+published: true
+---
+###### tags: make docker build help
+# make
+Открыл недавно для себя make-файлы. Удобная штука, чтобы не запоминать кучу команд для сборки, не вводить длинные докер команды. Запустил make, видишь какие команды есть, что можно делать.
+Вот пример моего make
+
+Make
+--- 
+```javascript=
+.DEFAULT_GOAL := help
+
+help: Makefile
+	@echo Choose a command to run
+	@sed -n 's/^##//p' $< | column -t -s ':' |  sed -e 's/^/ /'
+
+## up: create project
+up: docker-up
+## down: clear project
+down: docker-down
+
+docker-up: # еще и прикрепленные volume удали
+	docker-compose -f docker-compose.yml up -d
+
+docker-down:
+
+	docker-compose -f docker-compose.yml down --remove-orphans
+
+docker-down-clear:# еще и прикрепленные volume удали
+	docker-compose  -f docker-compose.yml down -v --remove-orphans
+
+```
+---
+**.DEFAULT_GOAL := help**
+значит если запускаешь без аргументов,то выполняй цель help на 3 строчке.
+А команла help парсит комментарии начинающиеся с ## и выводит подсказку их.Такая себе динамическая подсказка. В данном случае,при запуске make будет выведено 2 команды как поднять и как потушить проект
+```shell=
+✗ make
+Choose a command to run
+  up     create project
+  down   clear project
+``` 
+---
+
+небольшая gif
+---
+
+make![](https://i.imgur.com/H4B14bc.gif)
