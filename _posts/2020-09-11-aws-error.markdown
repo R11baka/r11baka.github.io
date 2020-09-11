@@ -1,0 +1,13 @@
+# aws error
+
+Если при вызове API-Gateway aws вы получаете 
+```json=
+{
+    "message": "Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. 
+}
+```
+или 
+```
+not a valid key=value pair (missing equal-sign) in Authorization header:
+```
+то дело точно в пути который дергаете. Возможно префикса какогото не хватает или path неправильный
