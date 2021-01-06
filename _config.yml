@@ -17,9 +17,21 @@ google_analytics: UA-80976120-1
 github: [metadata]
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+highlighter: rouge
 exclude: [vendor]
-gems:
-  - jekyll-seo-tag
+
+plugins_dir: ./_scripts
+plugins:
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 theme: jekyll-theme-cayman

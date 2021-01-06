@@ -9,10 +9,10 @@ categories: c
 ---
 
 Также полезно
-* ==[A TUTORIAL ON POINTERS AND ARRAYS IN C](https://github.com/jflaherty/ptrtut13)==
+* [A TUTORIAL ON POINTERS AND ARRAYS IN C](https://github.com/jflaherty/ptrtut13)
 
 ## [C Caltech assigments](http://users.cms.caltech.edu/~mvanier/CS11_C/#_assignments)
 * [Lab 5](http://users.cms.caltech.edu/~mvanier/CS11_C/labs/5/lab5.html) это задача по pointer и динамическое выделение памяти.Нужно написать одномерный клеточный автомат в консоли, разбирается арифметика указателей,динамическое выделение памяти.
 * [Lab 6](http://users.cms.caltech.edu/~mvanier/CS11_C/labs/6/lab6.html) Задача,отсортировать односвязный список с помощью быстрой сортировки. После нее появляется какое-то представление о struct, освобождении памяти!Пришлось поломать голову над динамическим освобождением памяти, в этой задаче это чуть менее очевидно,где и как освобождать память,по сравнению с прошлой задачей. [Lab 6 solution](https://github.com/R11baka/c-exercises/tree/master/c11/ex6).Также для этой задачи добавил проверку по valgrind,чтоб запустить достаточно запустить `make valgrind`. Эта команда соберет докер образ,скомпилирует и запустит valgrind
 * [Lab 7](http://users.cms.caltech.edu/~mvanier/CS11_C/labs/7/lab7.html) Написать простую hashtable, вот здесь,то мне понадобилось научиться пользоваться дебагерром в CLion. [Lab 7 solution](https://github.com/R11baka/c-exercises/tree/master/c11/ex7)
-* [Lab 8](http://users.cms.caltech.edu/~mvanier/CS11_C/labs/8/lab8.html) Написать простую стековую виртуальную машину
+* [Lab 8](http://users.cms.caltech.edu/~mvanier/CS11_C/labs/8/lab8.html) Написать простую стековую виртуальную машину. Ожидал сложного задания и тд,но по факту большую часть кода за тебя написали в template. Реализация заняла часа 2
